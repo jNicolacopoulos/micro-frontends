@@ -1,0 +1,20 @@
+{
+    "name": "micro-frontends-product-component",
+    "version": "0.0.1",
+    "description": "Sample component for user product details",
+    "scripts": {
+        "build": "node esbuild.mjs",
+        "dev": "node esbuild.dev.mjs",
+        "start": "node ./src/server.js"
+    },
+    "author": "Jimmy Nicolacopoulos",
+    "devDependencies": {
+        "@types/express": "^5.0.0",
+        "@types/node": "^22.7.9",
+        "esbuild": "^0.24.0",
+        "typescript": "^5.6.3"
+    },
+    "dependencies": {
+        "express": "^4.21.1"
+    }
+}

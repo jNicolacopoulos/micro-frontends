@@ -1,0 +1,5 @@
+.mf-account-container {
+    pointer-events: auto;
+    cursor: pointer;
+    z-index: 1;
+}

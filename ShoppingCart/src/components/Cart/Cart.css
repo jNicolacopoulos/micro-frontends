@@ -1,0 +1,21 @@
+.mf-shop-cart-container {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    position:relative;
+  }
+  .fa-shopping-bag {
+    font-size: 30px;
+  }
+  .mf-shop-cart-count {
+    position: absolute;
+    width:100%;
+    left: 0;
+    top:0;
+    color: #FFF;
+    line-height:20px;
+    margin-top: 10px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+  }

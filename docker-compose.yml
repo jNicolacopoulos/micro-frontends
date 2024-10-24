@@ -1,0 +1,44 @@
+version: '3.4'
+services:
+  app:
+    build: ./App
+    volumes:
+     - ./App/nginx.conf:/etc/nginx/conf.d/nginx.conf
+     - ./App/web:/usr/share/nginx/html
+    ports:
+     - "8080:8080"
+    depends_on:
+     - mf-product
+     - mf-account
+     - mf-shopping-cart
+
+  mf-product:
+    build: ./Product
+    volumes:
+     - /code/node_modules
+     - ./Product:/code
+    ports:
+     - "8083:8083"
+    command: npm run dev
+
+  mf-account:
+    build: ./Account
+    volumes:
+     - /code/node_modules
+     - ./Account:/code
+    ports:
+     - "8081:8081"
+    command: npm run dev
+
+  mf-shopping-cart:
+    build: ./ShoppingCart
+    volumes:
+     - /code/node_modules
+     - ./ShoppingCart:/code
+    ports:
+     - "8082:8082"
+    command: npm run dev
+
+networks:
+    my-net:
+        driver: bridge

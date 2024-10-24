@@ -1,0 +1,29 @@
+{
+    "name": "Cars",
+    "variants": [
+        {
+            "sku": "sedan01",
+            "color": "silver",
+            "name": "JN-3 Sedan",
+            "description": "A four-door, four-wheeled passenger vehicle with a closed body and a trunk compartment at the rear. Sedans are known for their comfort, fuel efficiency, and versatility.",
+            "image": "./assets/images/sedan.jpg",
+            "price": "$17195 CAD"
+        },
+        {
+            "sku": "suv01",
+            "color": "blue",
+            "name": "JN-X SUV",
+            "description": "A sport utility vehicle, designed for off-road use and hauling cargo. SUVs are characterized by their raised ground clearance, four-wheel drive, and spacious interior.",
+            "image": "./assets/images/suv.jpg",
+            "price": "$39000 CAD"
+        },
+        {
+            "sku": "sport01",
+            "color": "black",
+            "name": "JN-S Roadster",
+            "description": "A high-performance automobile designed for speed and agility. Sports cars often have powerful engines, aerodynamic body shapes, and advanced handling features.",
+            "image": "./assets/images/sport.jpg",
+            "price": "$113000 CAD"
+        }
+    ]
+}
