@@ -1,4 +1,5 @@
 import * as esbuild from 'esbuild';
+import copyPlugin from 'esbuild-plugin-copy';
 
 esbuild
     .build({
@@ -10,5 +11,13 @@ esbuild
         globalName: 'ProductMicrofrontend',
         target: ['es2017'],
         sourcemap: true,
+        plugins: [
+            copyPlugin({
+                assets: {
+                    from: './assets/**',
+                    to: './assets',
+                },
+            }),
+        ],
     })
     .catch(() => process.exit(1));

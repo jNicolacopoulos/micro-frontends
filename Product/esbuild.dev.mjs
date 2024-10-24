@@ -1,10 +1,19 @@
-import * as esbuild from 'esbuild';
+import esbuild from 'esbuild';
+import copyPlugin from 'esbuild-plugin-copy';
 
 let ctx = await esbuild.context({
     entryPoints: ['./src/componentWrapper.ts'],
     outfile: 'build/mf-product.bundle.js',
     bundle: true,
     sourcemap: true,
+    plugins: [
+        copyPlugin({
+            assets: {
+                from: './assets/**',
+                to: './assets',
+            },
+        }),
+    ],
 });
 
 await ctx.watch();

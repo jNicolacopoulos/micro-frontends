@@ -8,6 +8,7 @@ WORKDIR /code
 COPY package.json /code/
 COPY package-lock.json /code/
 COPY ./src /code/src
+COPY ./assets /code/assets
 RUN npm i
 
 EXPOSE 8083
