@@ -1,4 +1,4 @@
-import * as esbuild from 'esbuild';
+import esbuild from 'esbuild';
 
 let ctx = await esbuild.context({
     entryPoints: ['./src/componentWrapper.tsx'],

@@ -4,6 +4,7 @@
         "target": "ES6",
         "module": "ESNext",
         "moduleResolution": "node",
+        "resolveJsonModule": true,
         "strict": true,
         "esModuleInterop": true,
         "skipLibCheck": true,

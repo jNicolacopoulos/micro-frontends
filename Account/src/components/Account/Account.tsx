@@ -2,19 +2,7 @@ import React from 'react';
 import { Avatar } from '../Avatar/Avatar';
 import { Menu } from '../Menu/Menu';
 import './Account.css';
-
-const accountInfos = [
-    {
-        id: '1',
-        firstName: 'James',
-        lastName: 'Nicolacopoulos',
-    },
-    {
-        id: '2',
-        firstName: 'Don',
-        lastName: 'Rinckles',
-    },
-];
+import accountInfos from '../../data/accounInfos.json';
 
 const menuItems = [
     {

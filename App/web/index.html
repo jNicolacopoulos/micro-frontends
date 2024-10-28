@@ -3,17 +3,21 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>My virtual store</title>
+    <title>JN Motors</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="assets/css/page.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <!-- CSS should be bundled as part of mf component using CSS-in-JSS such as Styled Components or Emotion -->
+    <link href="http://localhost:8081/mf-account.bundle.css" rel="stylesheet">
+    <link href="http://localhost:8082/mf-shopping-cart.bundle.css" rel="stylesheet">
+    <link href="http://localhost:8083/mf-product.bundle.css" rel="stylesheet">
   </head>
   <body>
     <script src="http://localhost:8081/mf-account.bundle.js" async></script>
     <script src="http://localhost:8082/mf-shopping-cart.bundle.js" async></script>
     <script src="http://localhost:8083/mf-product.bundle.js" async></script>
     <main id="app">
-      <h1 id="store">My Virtual Store</h1>
+      <div id="store"><div id="logo"></div></div>
       <div id="menu">
         <mf-account id="account" user-id="1"></mf-account>
         <mf-cart id="cart"></mf-cart>
