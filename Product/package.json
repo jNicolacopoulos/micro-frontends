@@ -3,19 +3,21 @@
     "version": "0.0.1",
     "description": "Sample component for user product details",
     "scripts": {
-        "build": "node esbuild.mjs",
-        "dev": "node esbuild.dev.mjs",
+        "build": "npx vite build",
+        "dev": "npx vite build && npx vite",
         "start": "node ./src/server.js"
     },
     "author": "Jimmy Nicolacopoulos",
     "devDependencies": {
         "@types/express": "^5.0.0",
         "@types/node": "^22.7.9",
-        "esbuild": "^0.24.0",
-        "esbuild-plugin-copy": "^2.1.1",
-        "typescript": "^5.6.3"
+        "@vitejs/plugin-vue": "^5.1.4",
+        "typescript": "^5.6.3",
+        "vite": "^5.4.10",
+        "vite-plugin-static-copy": "^2.0.0"
     },
     "dependencies": {
-        "express": "^4.21.1"
+        "express": "^4.21.1",
+        "vue": "^3.5.12"
     }
 }

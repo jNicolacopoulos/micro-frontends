@@ -1,3 +1,9 @@
-import Product from './components/ProductDetails';
+import { defineCustomElement } from 'vue';
+import ProductDetails from './components/ProductDetails/ProductDetails.vue';
+import '../assets/component.css';
 
-window.customElements.define('mf-product', Product);
+const ProductDetailsElement = defineCustomElement(ProductDetails, {
+    shadowRoot: false,
+});
+
+window.customElements.define('mf-product', ProductDetailsElement);
