@@ -2,6 +2,7 @@
     "name": "micro-frontends-product-component",
     "version": "0.0.1",
     "description": "Sample component for user product details",
+    "type": "module",
     "scripts": {
         "build": "npx vite build",
         "dev": "npx vite build && npx vite",

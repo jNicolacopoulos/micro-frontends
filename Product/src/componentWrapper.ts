@@ -1,6 +1,6 @@
 import { defineCustomElement } from 'vue';
 import ProductDetails from './components/ProductDetails/ProductDetails.vue';
-import '../assets/component.css';
+import './component.css';
 
 const ProductDetailsElement = defineCustomElement(ProductDetails, {
     shadowRoot: false,
