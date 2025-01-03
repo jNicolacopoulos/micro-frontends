@@ -1,5 +1,4 @@
 import { createRoot } from 'react-dom/client';
-import React from 'react';
 import { Account } from './components/Account/Account';
 
 type AccountElementProps = {

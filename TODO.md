@@ -5,4 +5,5 @@
 - [x] Fix assets location, css...
 - [x] Convert Product mf to VueJS
 - [ ] Convert to CSS-in-JS
+- [ ] Fix hot reloading/replace esbuild with vite or webpack if necessary
 - [ ] Add backend, make site more functional 

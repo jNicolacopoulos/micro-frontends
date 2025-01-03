@@ -1,8 +1,14 @@
-import React from 'react';
+import { css } from '@emotion/react';
 import { Avatar } from '../Avatar/Avatar';
 import { Menu } from '../Menu/Menu';
-import './Account.css';
+import { useState } from 'react';
 import accountInfos from '../../data/accounInfos.json';
+
+const containerStyle = css({
+    pointerEvents: 'auto',
+    cursor: 'pointer',
+    zIndex: 1,
+});
 
 const menuItems = [
     {
@@ -23,13 +29,18 @@ export type AccountProps = {
     userId?: string;
 };
 export const Account = (props: AccountProps) => {
+    const [isHovered, setIsHovered] = useState(false);
     const { userId } = props,
         userInfo = accountInfos.find((info) => info.id === userId);
 
     return userInfo ? (
-        <div className='mf-account-container'>
+        <div
+            css={containerStyle}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+        >
             {userInfo && <Avatar {...userInfo} />}
-            <Menu items={menuItems} user={userInfo} />
+            <Menu items={menuItems} user={userInfo} visible={isHovered} />
         </div>
     ) : (
         <div>Guest</div>
